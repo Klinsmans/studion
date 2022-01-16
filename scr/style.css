@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 
 * {
   box-sizing: border-box;
@@ -60,15 +62,15 @@ ul {
 }
 
 .navbar__links li {
-  margin-right: 3.175rem;
   font-size: 0.875rem;
+  margin-right: 3.175rem;
   text-transform: uppercase;
 }
 
 .navbar__links a {
+  font-weight: 300;
   color: #fff;
   text-decoration: none;
-  font-weight: 300;
 }
 
 .navbar__links a:hover {
@@ -126,7 +128,6 @@ ul {
   font-size: 6.25rem;
   text-transform: uppercase;
   line-height: 6.25rem;
-  margin-bottom: 0rem;
 }
 
 .slide__copy h2 span {
@@ -135,7 +136,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  padding: 1.25rem 2.5rem;
+  padding: 1rem 2.5rem;
   border: 0.125rem solid #fff;
   border-radius: 5rem;
   color: var(--color-primary);
@@ -165,7 +166,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
-    padding: 4.375rem 1rem;
+  padding: 4.375rem 1rem;
 }
 
 .counter__container h3 {
@@ -182,7 +183,7 @@ ul {
   grid-template-columns: auto auto;
   gap: 3.125rem;
   align-items: center;
-  padding: 4.375rem;
+  padding: 4.375rem 0;
 }
 
 .institutional__image {
@@ -190,7 +191,7 @@ ul {
 }
 
 .institutional__copy {
-  padding: 0 1.875rem;
+  padding: 0 1.875rem 0 0;
 }
 
 .institutional__copy h6 {
@@ -221,3 +222,150 @@ ul {
   box-shadow: 0 1rem 1rem #0006;
 }
 
+.quote {
+  background-image: url(./images/parallax.jpg);
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote__container {
+  min-height: 80vh;
+  display: grid;
+  align-items: center;
+  justify-items: end;
+}
+
+.quote__copy {
+  background-color: #fff;
+  padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  letter-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+  margin: 0;
+}
+
+.quote__copy h2 {
+  margin: 2rem 0;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1875rem;
+}
+
+.quote__copy h2 span {
+  display: block;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+}
+
+.logo-studion__subtitle {
+  display: block;
+}
+
+.footer__form {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 9ch auto;
+  gap: 1.25rem;
+}
+
+.footer__form label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer__email {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+  width: 100%;
+}
+
+.footer__form input {
+  background-color: var(--color-primary);
+  border: unset;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer__form input::placeholder {
+  color: #000;
+}
+
+.footer__form input:focus {
+  outline: unset;
+}
+
+.footer__form button {
+  cursor: pointer;
+  border: unset;
+  height: 100%;
+  transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+  color: #fff;
+  background-color: var(--color-copy);
+}
+
+.footer__social {
+  justify-self: end;
+
+}
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active {
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.footer__social a .fa-twitter,
+.footer__social a:visited .fa-twitter,
+.footer__social a:active .fa-twitter {
+  color: #000;
+}
+
+.footer hr {
+  border-color: #fff4;
+  margin: 0;
+}
+
+.footer p {
+  text-align: center;
+  font-size: .875rem;
+  font-weight: 300;
+  margin: 2.5rem 0;
+  }
