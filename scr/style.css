@@ -2,11 +2,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 
-@import "./css/_variables.css"; /* Variaveis usadas na page */
-@import "./css/_base.css"; /* Relacionado ao estilo das informações base */
-@import "./css/_navbar.css"; /* Relacionado ao estilo da NavBar */
-@import "./css/_utils.css"; /* Relacionado ao utilitarios da page */
-@import "./css/_home.css"; /* Relacionado ao estilo do home */
-@import "./css/_contacts.css"; /* Relacionado ao estilo da page de Contatos */
-@import "./css/_button.css"; /* Relacionado ao estilo do botão */
-@import "./css/_footer.css"; /* Relacionado o footer da página */
+@import "./css/_variables.css"; /* Variaveis usadas na páginas */
+@import "./css/_base.css";
+@import "./css/_utils.css";
+@import "./css/_button.css";
+
+@import "./css/_footer.css"; /* Relacionado aos componentes padrão em todas as páginas */
+@import "./css/_hero.css";
+@import "./css/_navbar.css";
+
+@import "./css/_home.css"; /* Grupo relacionados as páginas */
+@import "./css/_contacts.css";

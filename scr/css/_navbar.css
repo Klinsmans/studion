@@ -1,10 +1,9 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #000; /* vermelho / verde / azul / transparência - 0 - F */
   color: #fff;
 }
 
