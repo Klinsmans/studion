@@ -1,6 +1,31 @@
-#slider {
+.slider {
   background-color: #000;
   color: #fff;
+}
+
+.slider-prevArrow::before,
+.slider-nextArrow::before {
+  content: "";
+}
+
+.slider-nextArrow,
+.slider-prevArrow {
+  border: 5px solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.5;
+}
+
+.slider-nextArrow {
+  z-index: 1;
+  right: 2rem;
+  transform: rotate(135deg);
+}
+
+.slider-prevArrow {
+  z-index: 1;
+  left: 2rem;
+  transform: rotate(-45deg);
 }
 
 .slide {

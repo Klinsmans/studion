@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Studion</title>
   </head>
@@ -35,7 +43,7 @@
     </nav>
 
     <header>
-      <div id="slider">
+      <div class="slider">
         <div class="slide">
           <img
             class="slide__background-image"
@@ -51,6 +59,36 @@
             <button class="btn btn--slide">Saiba Mais</button>
           </div>
         </div>
+        <div class="slide">
+          <img
+            class="slide__background-image"
+            src="./images/banner2.jpg"
+            alt="Studion Banner"
+          />
+          <div class="slide__copy">
+            <h6>
+              <span class="copy--primary">Próximo evento</span> - Dia 25 de
+              Setembro às 19h
+            </h6>
+            <h2><span class="copy--primary">FEST</span> FORWARD</h2>
+            <button class="btn btn--slide">Saiba Mais</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            class="slide__background-image"
+            src="./images/banner3.jpg"
+            alt="Studion Banner"
+          />
+          <div class="slide__copy">
+            <h6>
+              <span class="copy--primary">Próximo evento</span> - Dia 25 de
+              Setembro às 19h
+            </h6>
+            <h2><span class="copy--primary">SHOW</span> EVENT</h2>
+            <button class="btn btn--slide">Saiba Mais</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -59,19 +97,19 @@
         <ul class="container counter__container">
           <li>
             <h3>
-              + de 500
+              + de <span class="counter_number">500</span>
               <small> eventos realizados </small>
             </h3>
           </li>
           <li>
             <h3>
-              + de 1.000.000
+              + de <span class="counter_number">1000000</span>
               <small> de ingressos vendidos </small>
             </h3>
           </li>
           <li>
             <h3>
-              + de 300
+              + de <span class="counter_number">300</span>
               <small> empresas atendidas </small>
             </h3>
           </li>
@@ -121,7 +159,9 @@
           <label for="email">receba news e promoções</label>
           <div class="footer__email">
             <input id="email" type="email" placeholder="email" />
-            <button type="submit"><i class="fas fa-paper-plane fa-2x"></i></button>
+            <button type="submit">
+              <i class="fas fa-paper-plane fa-2x"></i>
+            </button>
           </div>
         </form>
         <ul class="footer__social">
@@ -134,7 +174,7 @@
             <a href="https://twitter.com/" target="_blank">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fab fa-twitter fa-stack-1x "></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
               </span>
             </a>
           </li>
@@ -148,8 +188,16 @@
 
       <hr />
       <p>
-        <small>Studi<span class="copy--primary">ON</span> - Todos os direitos reservados.</small>
+        <small
+          >Studi<span class="copy--primary">ON</span> - Todos os direitos
+          reservados.</small
+        >
       </p>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="http://ciromattia.github.io/jquery.counterup/jquery.counterup.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
