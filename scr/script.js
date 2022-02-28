@@ -1,4 +1,10 @@
 $(document).ready(() => {
+  // MENU
+  $(".navbar__menu-btn").on("click", function () {
+    $(".navbar__links").toggleClass("active");
+    $(this).find("i").toggleClass("fa-regular fa-xmark");
+  });
+
   const slickOptions = {
     autoplay: true,
     dots: false,
